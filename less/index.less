@@ -73,6 +73,11 @@ button{
             backdrop-filter: blur(2px);
             padding: @pad-lg;
             .ctn-top-bar{
+                @media (max-width:600px) {
+                    grid-template-columns: 1fr;
+                    justify-items: center;
+                    justify-content: center;
+                }
                 display: grid;
                 grid-template-columns: .25fr .75fr;
                 align-items: center;
@@ -148,6 +153,7 @@ button{
                                         text-decoration: none;
                                         color: inherit;
                                         font-size: @radius-size-lg + 2;
+                                        outline: none;
                                     }
                                     &::after{
                                         content: "";

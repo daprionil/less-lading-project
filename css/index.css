@@ -77,6 +77,13 @@ button {
   grid-template-columns: 0.25fr 0.75fr;
   align-items: center;
 }
+@media (max-width: 600px) {
+  * body header.top-bar .ctn-top-bar {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    justify-content: center;
+  }
+}
 * body header.top-bar .ctn-top-bar .left-side-top-bar .item-icon-bussiness .ctn-icon-bussiness {
   display: flex;
   align-items: center;
@@ -136,6 +143,7 @@ button {
   text-decoration: none;
   color: inherit;
   font-size: 17px;
+  outline: none;
 }
 * body header.top-bar .ctn-top-bar .right-side-top-bar .item-top-bar-menu nav.menu-list ul.list-items li.item-list-menu::after {
   content: "";
